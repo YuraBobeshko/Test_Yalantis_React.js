@@ -21,7 +21,7 @@ export default function TableUsers(props) {
             <th scope="row">{index}</th>
             <td>{user.firstName}</td>
             <td>{user.lastName}</td>
-            <td>{user.dob}</td>
+            <td>{user.dob.slice(0, 10)}</td>
           </tr>
         );
       })}
