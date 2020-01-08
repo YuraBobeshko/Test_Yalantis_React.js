@@ -1,14 +1,32 @@
-export const listMonth = [
-  { name: "Январь", numeral: 0 },
-  { name: "Февраль", numeral: 1 },
-  { name: "Март", numeral: 2 },
-  { name: "Апрель", numeral: 3 },
-  { name: "Май", numeral: 4 },
-  { name: "Июнь", numeral: 5 },
-  { name: "Июль", numeral: 6 },
-  { name: "Август", numeral: 7 },
-  { name: "Сентябрь", numeral: 8 },
-  { name: "Октябрь", numeral: 9 },
-  { name: "Ноябрь", numeral: 10 },
-  { name: "Декабрь", numeral: 11 }
-];
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
+import cn from "classnames";
+
+export default function ListMonth(props) {
+  
+  const { listMonth, setSortBy } = props;
+
+  return (
+    <ul className="rounded">
+    {listMonth.map(month => (
+      <li key={month.numeral} onMouseOver={() => setSortBy(month.numeral)}>
+        <a
+          className={cn({
+            gray: month.setQuantityUsers.length <= 3,
+            blue:
+              month.setQuantityUsers.length > 3 &&
+              month.setQuantityUsers.length <= 6,
+            green:
+              month.setQuantityUsers.length >= 7 &&
+              month.setQuantityUsers.length <= 10,
+            red: month.setQuantityUsers.length >= 11
+          })}
+          href="#"
+        >
+          {month.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+  )
+}
