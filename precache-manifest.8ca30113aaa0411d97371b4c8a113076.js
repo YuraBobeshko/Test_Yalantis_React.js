@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c39c5940190818456feb6da20a77353f",
+    "revision": "6110f74cbbf2022dd14625a344364471",
     "url": "/Test_Yalantis_React.js/index.html"
   },
   {
-    "revision": "32a53168a861274d4c79",
+    "revision": "62d98dafa26e487f9e1b",
     "url": "/Test_Yalantis_React.js/static/css/main.16a55e42.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Test_Yalantis_React.js/static/js/2.789a6a10.chunk.js.LICENSE"
   },
   {
-    "revision": "32a53168a861274d4c79",
-    "url": "/Test_Yalantis_React.js/static/js/main.0627d04d.chunk.js"
+    "revision": "62d98dafa26e487f9e1b",
+    "url": "/Test_Yalantis_React.js/static/js/main.4100b132.chunk.js"
   },
   {
     "revision": "e3554b9a4034b9af3b7e",
